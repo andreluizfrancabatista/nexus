@@ -1,0 +1,5 @@
+openai==2.32.0
+Pillow==12.2.0
+python-dotenv==1.2.2
+tenacity==9.1.4
+tqdm==4.67.3
