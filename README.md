@@ -1,4 +1,4 @@
-# Contexto Resumido: Sistema de Extração de Flyers com OCR
+# Sistema de Extração de Flyers com OCR
 
 ## Descrição
 Sistema Python que extrai produtos, preços e metadados de imagens de flyers (supermercados, farmácias) usando OCR com GPT-4o-mini da OpenAI.
@@ -140,18 +140,16 @@ python main_improved.py
 
 ## Lições Aprendidas (Histórico)
 
-**Erro 1:** Parsing esperava formato diferente → CSV com colunas erradas
-**Solução:** Ajustar parsing para aceitar múltiplos formatos
+1. **Erro 1:** Parsing esperava formato diferente → CSV com colunas erradas
+    1. **Solução:** Ajustar parsing para aceitar múltiplos formatos
 
-**Erro 2:** Caracteres Unicode (✓) no Windows → UnicodeEncodeError
-**Solução:** Configurar UTF-8 + usar [OK] ao invés de ✓
+2. **Erro 2:** Caracteres Unicode (✓) no Windows → UnicodeEncodeError
+    1. **Solução:** Configurar UTF-8 + usar [OK] ao invés de ✓
 
-**Erro 3:** LLM inventando produtos na folder_07.jpg
-**Causa real:** MAX_IMAGE_SIZE=2048 redimensionava imagem de 3MB
-**Solução:** MAX_IMAGE_SIZE=4096 (texto ficou legível, OCR ficou preciso)
+3. **Erro 3:** LLM inventando produtos na folder_07.jpg
+    1. **Causa real:** MAX_IMAGE_SIZE=2048 redimensionava imagem de 3MB
+    2. **Solução:** MAX_IMAGE_SIZE=4096 (texto ficou legível, OCR ficou preciso)
 
 **Lição principal:** Para OCR, qualidade de imagem > economia de custo
 
 ---
-
-**Contexto resumido pronto para uso em prompts com outras LLMs!**
