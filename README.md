@@ -5,7 +5,7 @@ Sistema Python que extrai produtos, preços e metadados de imagens de flyers (su
 
 ## Arquivos Principais
 
-### main_improved.py
+### main.py
 Script principal que:
 - Processa múltiplas imagens em lote
 - Extrai produtos e preços (OCR 100% literal)
@@ -42,7 +42,7 @@ tenacity>=8.2.0
 ## Estrutura
 ```
 projeto/
-├── main_improved.py
+├── main.py
 ├── .env
 ├── requirements.txt
 ├── folders_entrada/        # INPUT: imagens aqui
